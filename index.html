@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jessica's interaction project</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+  <div id="div-name">
+  <form>
+  <label for="name">what's your name</label>
+  <input type="text" name="name" id="name" value="">
+  </form>
+  <button onclick="logName()"type="button" name="namebutton">ok</button>
+  </div>
+
+
+
+  <div id="opening">
+  <img src="images/niceday.png" alt="" ID=niceday>
+</div>
+
+
+<div id="scene0">
+
+    <img onclick="scene0to1()"src="images/scene0.png" alt="" >
+   <div class="dialogue"id=dialogues1b1>
+    <p class="textwhite" >Ah  it is a new day!</p>
+   </div>
+   <div class="dialogue right"id=dialogues1b2>
+    <p class="textwhite" id="randomDialogue">Can't wait for the fireworks tonight!</p>
+  </div>
+  <p class="click" id="instruction"><font color="black">click the picture to move on</font></p>
+  </div>
+
+
+<div id="scene1">
+
+ <div id="scene1p1">
+   <img onclick="scene1p2()"src="images/scene1p1.png" alt="" >
+  <div class="dialogue"id=dialogues1b1>
+   <p class="textwhite">Do you know the fireworks display!</p>
+  </div>
+  <div class="dialogue right"id=dialogues1b2>
+   <p class="textwhite">Yes, I'm going to see it tonight!</p>
+  </div>
+ </div>
+
+
+ <div id="scene1p2">
+   <img onclick="scene1p2()"src="images/scene1p2.png" alt="" >
+
+  <div class="dialogue right"id=dialogues1b2>
+   <p class="textwhite">let's go out for a walk</p>
+  </div>
+</div>
+
+  <div id="scene1p3">
+    <img onclick="scene1p2()"src="images/scene1p3.png" alt="" >
+   <div class="dialogue"id=dialogues1b1>
+    <p class="textwhite">A balloon?</p>
+   </div>
+   <div class="buttons">
+    <button onclick="scene1to2()" >Catch the balloon!</button>
+    <button onclick="scene1to3()">Keep going</button>
+   </div>
+ </div>
+
+
+<p id="hiuser"></p>
+
+</div>
+</div>
+
+<div id="scene2">
+<img src="images/scene2p1.png" alt="" >
+<div class="dialogue"id=dialogues1b1>
+ <p class="textwhite">Here you are!</p>
+</div>
+<div class="dialogue right"id=dialogues1b2>
+ <p class="textwhite"id="thanks">Thank you!</p>
+</div>
+<p>It turns out to be this boy's balloon!</p>
+
+</div>
+
+
+<div id="scene3">
+<img onclick="scene3to4()"src="images/scene3.png" alt="" >
+<div class="dialogue"id=dialogues1b1>
+ <p class="textwhite">Oh no!!!</p>
+</div>
+<div class="dialogue right"id=dialogues1b2>
+ <p class="textwhite">I should have known...</p>
+</div>
+<p>A boy rushed to catch the ballon but he was hit by a car</p>
+
+</div>
+
+
+<div id="scene4">
+  <div id=scene4p1>
+<img onclick="scene4p2()" src="images/scene4p1.png" alt="" id="police">
+<div class="dialogue"id=dialogues1b1>
+ <p class="textwhite">A rabbit suspect is on the run !!! The fireworks display is cancelled</p>
+</div>
+<div class="dialogue right"id=dialogues1b2>
+ <p class="textwhite">Suspect? That sounds dangerous...
+   I should go home since the fireworks display was cancelled...</p>
+</div>
+
+</div>
+
+<div id=scene4p2>
+<img onclick="scene4to0()" src="images/scene4p2.png" alt="" >
+<div class="dialogue"id=dialogues1b1>
+<p class="textwhite">The road is blocked because of the bad weather!</p>
+</div>
+<div class="dialogue right"id=dialogues1b2>
+<p class="textwhite">Then I have to stay in the hotel for another night...</p>
+</div>
+</div>
+<p>It's getting dark</p>
+</div>
+
+<div id="scene5">
+<img src="images/scene5.png" alt="" >
+   <div class="dialogue right"id=dialogues1b2>
+    <p class="textwhite">Isn't that the suspect?!</p>
+  </div>
+<p>Keep walking on the street</p>
+<button onclick="scene5to6()">Try to talk to him or her</button>
+<button onclick="scene5to7()">Try to threaten the suspect</button>
+<button onclick="scene5to8()">Try to catch the suspect</button>
+</div>
+
+<div id="scene6">
+  <div id="scene6p1">
+<img onclick="scene6p2()"src="images/scene6p1.png" alt="" id="help" >
+<div class="dialogue"id=dialogues1b1>
+ <p class="textwhite">What's wrong?</p>
+</div>
+<div class="dialogue right"id=dialogues1b2>
+ <p class="textwhite">You can talk to me if you like</p>
+</div>
+</div>
+
+<div id="scene6p2">
+<img onclick="scene6p2()"src="images/scene6p2.png" alt=""  >
+<div class="dialogue"id=dialogues1b1>
+<p class="textwhite">...</p>
+</div>
+<div class="dialogue right"id=dialogues1b2>
+<p class="textwhite">There are always other solutions I believe. Remember, never violate the law.</p>
+</div>
+
+</div>
+
+<p>talking</p>
+
+<!--<button onclick="scene6to12()">to12</button>-->
+</div>
+
+<div id="scene7">
+<img onclick="scene7to10()"src="images/scene7p1.png" alt=""id="threat">
+<p>Ah</p>
+
+</div>
+
+<div id="scene8">
+<img onclick="scene8to10()"src="images/scene8p1.png" alt="" >
+<div class="dialogue right"id=dialogues1b2>
+<p class="textwhite">Well, I think I have little chance to win</p>
+</div>
+<p>Ah</p>
+
+</div>
+
+<div id="scene9">
+<img src="images/scene9p1.png" alt="" id="fireworksEffect">
+
+<p>Without accidents, without running criminal, the fireworks display finally succeed!</p>
+<p>--The End--</p>
+<a href="https://www.youtube.com/watch?v=XGL2n1yCY1I">Adapted from this video</a>
+<!--
+<button onclick="scene9to10()">to10</button>
+<button onclick="scene9to11()">to11</button>
+-->
+</div>
+
+<div onclick="scene10to0()"id="scene10">
+<img src="images/die.png" alt="" ID=niceday>
+<p> What happened? ... it's all dark...</p>
+</div>
+<!--
+<div id="scene11">
+<img src="images/niceday.png" alt="" ID=niceday>
+<p>this is scene11</p>
+<button onclick="scene11to1()">to1</button>
+</div>
+
+<div id="scene12">
+<img src="images/niceday.png" alt="" ID=niceday>
+<p>this is scene12</p>
+<button onclick="scene12to1()">to1</button>
+</div>-->
+ <script src="js/script.js" type="text/javascript"></script>
+  </body>
+</html>
